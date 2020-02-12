@@ -59,7 +59,7 @@ class Parse_Data():
         for x in range(self.start_frame, self.finish_frame):
             path = self.get_path(x)
             grayscale = Enhance_Image.frame_to_grayscale(path)
-            cropped = Enhance_Image.crop_frame(grayscale, 125, 490, 290, 562)
+            cropped = Enhance_Image.crop_frame(grayscale,  110, 465, 305, 558)
             cropped = Enhance_Image.enhance_image(cropped)
             self.speed_list.append(self._get_speed(cropped))
 
